@@ -5,10 +5,15 @@ Welcome to the **Valentine's Week** page! Celebrate love, joy, and fun with each
   <img src="https://github.com/user-attachments/assets/c81c7158-7211-455b-86e8-c6ffc1d70f09" alt="Image" width="500" style="border-radius: 15px;">
 </p>
 
-# CheckOut Now .....!
-![Modern Black White Brush Motivational Quote Banner]()
 
-<a href="https://parth-sancheti-5.github.io/Valentine-Week/"><image src="https://github.com/user-attachments/assets/d9c01a74-9e24-48c8-8946-7bd74d19975d" height="100" width="250" ></a>
+---
+
+
+
+# CheckOut Now .....!
+
+
+<a href="https://parth-sancheti-5.github.io/Valentine-Week/"><image src="https://github.com/user-attachments/assets/d9c01a74-9e24-48c8-8946-7bd74d19975d" height="200" width="350" ></a>
 ---
 
 ## Days of the Week 💕
