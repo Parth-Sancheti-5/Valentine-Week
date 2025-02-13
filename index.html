@@ -150,15 +150,17 @@
   </footer>
 
   <!-- Script for Copy URL -->
-  <script>
-    function copyToClipboard(url) {
-      navigator.clipboard.writeText(url).then(function() {
-        alert('URL Copied: ' + url);
-      }, function(err) {
-        alert('Error copying URL');
-      });
-    }
-  </script>
+<script>
+  function copyToClipboard(url) {
+    var tempInput = document.createElement("input");
+    tempInput.value = url;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempInput);
+    alert("URL copied to clipboard: " + url);
+  }
+</script>
 </body>
 </html>
 
