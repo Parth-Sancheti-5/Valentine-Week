@@ -1,0 +1,266 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background: #F780B7;
+    background-size: cover;
+    animation: gradient 15s ease infinite;
+    overflow-x: hidden;
+}
+
+/* Branding */
+.branding {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+.psg-brand {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.psg-brand .tm {
+    font-size: 0.7em;
+    vertical-align: super;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    z-index: 1;
+    background: linear-gradient(135deg, #ff7eb9, #ff4c9e); /* Ensure hero background matches body */
+    overflow: hidden;
+}
+
+/* Hero Content */
+.hero-content {
+    z-index: 2;
+    max-width: 900px;
+    margin-left: -39%;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 4em;
+    text-align: left;
+    margin-bottom: 20px;
+    text-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    line-height: 1.6;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Slider Container */
+.slider-container {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 40%; /* Original width */
+    height: 80%; /* Original height */
+    overflow: hidden;
+    border-radius: 50% 0 0 50%; /* Semi-circle shape */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Slider */
+.slider {
+    display: flex;
+    width: 100%; /* Ensure the slider width is 100% of the container */
+    height: 100%; /* Ensure the slider height is 100% of the container */
+    animation: imageSlider 12s infinite; /* Animation for sliding */
+}
+
+/* Slide */
+.slide {
+    width: 100%; /* One image takes the full width */
+    height: 100%; /* One image takes the full height */
+    overflow: hidden;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* Image inside the slide */
+.slide img {
+    width: 100%; /* Ensure image covers the full width */
+    height: 100%; /* Ensure image covers the full height */
+    object-fit: cover; /* Ensure the image fully covers the semi-circle container */
+    border-radius: 50%; /* Maintain the semi-circle shape */
+}
+
+/* Keyframes for sliding animation */
+@keyframes imageSlider {
+    0%, 20% { transform: translateX(0); }  /* Show the first image */
+    33%, 53% { transform: translateX(-100%); }  /* Show the second image */
+    66%, 86% { transform: translateX(-200%); }  /* Show the third image */
+    100% { transform: translateX(0); }  /* Loop back to the first image */
+}
+
+/* Wave Effect */
+.hero-wave {
+    position: absolute;
+    bottom: -10px; /* Adjusted for better spacing */
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* SVG for Wave */
+.hero-wave svg {
+    fill: #ff7eb9; /* Same color as body gradient */
+    width: 100%;
+    height: auto;
+}
+
+/* Main Section */
+.valentine-days {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    text-align: center;
+    margin: 60px 30px;
+    padding: 40px 40px;
+    background-color: #ff66b3; /* Adjusted color for better contrast */
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Title */
+.section-title {
+    text-align: center;
+    font-size: 2.8em;
+    margin-bottom: 40px;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Valentine Day Box */
+.valentine-day {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.valentine-day:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Day Image */
+.day-image {
+    width: 100%;
+    height: 220px;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+}
+
+.day-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Day Content */
+.day-content {
+    padding-top: 15px;
+    text-align: left;
+}
+
+.day-title {
+    font-size: 1.8em;
+    color: #ff3385;
+    margin-bottom: 15px;
+}
+
+.day-message {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.btn {
+    background: linear-gradient(135deg, #ff66a3, #ff3385);
+    color: white;
+    padding: 12px 25px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #ff3385, #ff1a75);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 51, 133, 0.3);
+}
+
+/* Footer */
+footer {
+    background: #ff3385;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 0.95em;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
